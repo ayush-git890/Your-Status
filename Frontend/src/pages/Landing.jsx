@@ -86,8 +86,8 @@ export default function Landing() {
         <div className="landing-form-card glass-card">
           <div className="landing-mascot-wrap">
             <img
-              src="/images/Naruto.jpg"
-              alt="Naruto"
+              src="/images/Logo.png"
+              alt="Your Status"
               className="landing-mascot"
             />
           </div>

@@ -1,0 +1,28 @@
+
+# Local directories
+.git
+node_modules/
+
+# Environment variables — NEVER commit these
+.env
+.env.local
+.env.production
+.env.development
+.env.test
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+uploads/
+
+# Logs
+logs/
+*.log

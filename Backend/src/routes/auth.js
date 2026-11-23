@@ -133,6 +133,11 @@ router.post('/google', async (req, res) => {
       return res.status(400).json({ success: false, message: 'Google idToken required' });
     }
 
+    const { getApps } = require('firebase-admin/app');
+    if (getApps().length === 0) {
+      return res.status(503).json({ success: false, message: 'Google sign-in is not configured on the server' });
+    }
+
     const { getAuth } = require('firebase-admin/auth');
     const decodedToken = await getAuth().verifyIdToken(idToken);
     const { email, name, picture } = decodedToken;
