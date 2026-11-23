@@ -26,3 +26,7 @@ uploads/
 # Logs
 logs/
 *.log
+
+# Markdown documentation (keep READMEs tracked)
+*.[mM][dD]
+![rR][eE][aA][dD][mM][eE].[mM][dD]
